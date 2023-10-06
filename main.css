@@ -17,6 +17,12 @@ nav ul {
     background-color: blue;
 }
 
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+
 nav a:visited {
-    color: white
+    color: white;
 }
