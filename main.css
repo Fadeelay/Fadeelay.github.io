@@ -16,3 +16,7 @@ nav ul {
     justify-content: space-around;
     background-color: blue;
 }
+
+nav a:visited {
+    color: white
+}
