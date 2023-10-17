@@ -1,88 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rectangles</title>
   <style>
-    .rectangle {
-      border: 1px solid black;
-      position: absolute;
+    .container {
+      width: 360px; 
+      height: 360px; 
+      background-color: transparent;
+      border: 4px solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #FFFFFF; /* White text color */
+      border-radius: 15px;
+      border-color: #333; /* Border color for the big shape */
     }
-    .rectangle-1 {
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 10px;
+    }
+
+    .shape {
       width: 100px;
-      height: 50px;
-      background-color: green;
-      top: 0;
-      left: 0;
+      height: 100px;
+      background-color: transparent;
+      border: 3px solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #FFFFFF; /* White text color */
+      border-radius: 15px;
     }
-    .rectangle-2 {
-      width: 80px;
-      height: 60px;
-      background-color: orange;
-      top: 60px;
-      left: 120px;
+
+     .shape:nth-child(1) {
+      border-color: #FF5733;
     }
-    .rectangle-3 {
-      width: 50px;
-      height: 30px;
-      background-color: yellow;
-      top: 100px;
-      left: 200px;
+
+    .shape:nth-child(2) {
+      border-color: #3498DB;
     }
-    .rectangle-4 {
-      width: 70px;
-      height: 40px;
-      background-color: green;
-      top: 150px;
-      left: 0;
+
+    .shape:nth-child(3) {
+      border-color: #E74C3C;
     }
-    .rectangle-5 {
-      width: 40px;
-      height: 20px;
-      background-color: orange;
-      top: 200px;
-      left: 100px;
+
+    .shape:nth-child(4) {
+      border-color: #27AE60;
     }
-    .rectangle-6 {
-      width: 60px;
-      height: 30px;
-      background-color: yellow;
-      top: 220px;
-      left: 200px;
+
+    .shape:nth-child(5) {
+      border-color: #F1C40F;
     }
-    .rectangle-7 {
-      width: 90px;
-      height: 50px;
-      background-color: green;
-      top: 250px;
-      left: 0;
+
+    .shape:nth-child(6) {
+      border-color: #9B59B6;
     }
-    
-    body {
-        background-color:white; 
-        margin-top:-10%;
-        margin-left:-10%;
-        margin-right:-10%;
-        margin-bottom:-10%;
-        position:relative; 
-        height:auto; 
-        width:auto; 
-        overflow:hidden; 
-        padding-top:auto; 
-        padding-left:auto; 
-        padding-right:auto; 
-        padding-bottom:auto; 
-        text-align:center; 
-     }
-    
-   </style>
+    .shape:nth-child(7) {
+      border-color: red;
+    }
+  </style>
 </head>
 <body>
-<div class="rectangle rectangle-1"></div>
-<div class="rectangle rectangle-2"></div>
-<div class="rectangle rectangle-3"></div>
-<div class="rectangle rectangle-4"></div>
-<div class="rectangle rectangle-5"></div>
-<div class="rectangle rectangle-6"></div>
-<div class="rectangle rectangle-7"></div>
+  <li><a href="third.html">← Back to second Page</a></li>
+  <div class="container">
+    <div class="grid-container">
+      <div class="shape">1</div>
+      <div class="shape">2</div>
+      <div class="shape">3</div>
+      <div class="shape">4</div>
+      <div class="shape">5</div>
+      <div class "shape">6</div>
+    </div>
+  </div>
 </body>
 </html>
